@@ -15,11 +15,11 @@ public class DbRepository {
           new ContentJSON("This is a text", "https://"))
   );
 
-  List<Content> findAllContents() {
+  public List<Content> findAllContents() {
     return contents;
   }
 
-  List<ContentJSON> findAllContentJSON() {
+  public List<ContentJSON> findAllContentJSON() {
     return contents.stream().map(Content::getContent).collect(Collectors.toList());
   }
 }
