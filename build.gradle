@@ -10,6 +10,10 @@ repositories {
     mavenCentral()
 }
 
+ext {
+    lombokVersion = "1.18.26"
+}
+
 dependencies {
     annotationProcessor("io.micronaut:micronaut-http-validation")
     implementation("io.micronaut:micronaut-http-client")
@@ -19,6 +23,9 @@ dependencies {
     runtimeOnly("ch.qos.logback:logback-classic")
     implementation("io.micronaut:micronaut-validation")
 
+    // Lombok
+    compileOnly ("org.projectlombok:lombok:$lombokVersion")
+    annotationProcessor ("org.projectlombok:lombok:$lombokVersion")
 }
 
 
