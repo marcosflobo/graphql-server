@@ -1,0 +1,7 @@
+micronaut:
+  application:
+    name: graphqlServer
+netty:
+  default:
+    allocator:
+      max-order: 3
