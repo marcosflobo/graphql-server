@@ -1,5 +1,8 @@
 package com.marcosflobo.model;
 
+import io.micronaut.core.annotation.Introspected;
+
+@Introspected
 public class Content {
 
   private final String id;
