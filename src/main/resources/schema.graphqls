@@ -1,0 +1,14 @@
+type Content {
+    id: ID
+    title: String
+    content: ContentJSON
+}
+
+type ContentJSON {
+    text: String
+    imgurl: String
+}
+
+type Query {
+    contentById(id: ID): Content
+}
